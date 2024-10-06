@@ -1,0 +1,5 @@
+# redis-server
+# celery -A celery_worker.celery_app worker --loglevel=info
+# uvicorn app.main:app --reload
+# from app.tasks import fetch_and_send_alerts
+# fetch_and_send_alerts.apply_async(countdown=60)  # Schedule to run every hour
